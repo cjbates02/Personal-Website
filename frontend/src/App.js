@@ -15,9 +15,7 @@ function App() {
   return (
     <div className="main-container">
       <Navbar />
-      <div className="content-container">
-        <MyTimeline milestones={milestones}/>
-      </div>
+      <MyTimeline milestones={milestones}/>
     </div>
   );
 }

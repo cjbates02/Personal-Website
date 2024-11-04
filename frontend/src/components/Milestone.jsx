@@ -1,12 +1,15 @@
+import Node from './Node.jsx';
+import Edge from './Edge.jsx';
+import Callout from './Callout.jsx';
+
 export default function Milestone({ date }) {
     return (
-        <div className="node-edge-container">
-            <div className="node-container">
-                <span>test</span>
-                <div className="node"></div>
-                <span>test</span>
+        <div className="milestone-container">
+            <div className="node-callout-container">
+                <Node />
+                <Callout />
             </div>
-            <div className="edge"></div>
+            <Edge />
         </div>
     )
 }

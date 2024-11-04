@@ -8,7 +8,12 @@ const milestones = [
   {'key': 2, 'date': 'August 2022'},
   {'key': 3, 'date': 'March 2023'},
   {'key': 4, 'date': 'March 2023'},
-  {'key': 5, 'date': 'March 2023'}
+  {'key': 5, 'date': 'March 2023'},
+  {'key': 6, 'date': 'August 2021'},
+  {'key': 7, 'date': 'August 2022'},
+  {'key': 8, 'date': 'March 2023'},
+  {'key': 9, 'date': 'March 2023'},
+  {'key': 10, 'date': 'March 2023'}
 ]
 
 function App() {

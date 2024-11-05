@@ -1,5 +1,7 @@
-export default function Node({ date }) {
+export default function Node({ date, dateClass }) {
+    dateClass = `node ${dateClass}`;
+    let dateContent = `content: '${date}'`
     return (
-        <div className="node"></div>
+        <div className={dateClass} style={{dateContent}}></div>
     )
 }

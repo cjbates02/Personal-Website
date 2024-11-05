@@ -1,5 +1,5 @@
-export default function Callout() {
+export default function Callout({calloutContainerClass}) {
     return (
-        <div className="callout"></div>
+        <div className={calloutContainerClass}></div>
     )
 }

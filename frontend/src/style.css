@@ -75,7 +75,7 @@ body {
     width: 50px;
     border-radius: 90%;
 }
-
+/* 
 .date-right::after {
     content: 'March 2024';
     display: block;
@@ -95,6 +95,20 @@ body {
     bottom: 35px;
     right: 55px;
     text-align: right;
+} */
+
+.date-right {
+    position: absolute;
+    left: 55px;
+    top: 15px;
+    width: max-content;
+}
+
+.date-left {
+    position: absolute;
+    right: 55px;
+    top: 15px;
+    width: max-content;
 }
 
 .edge {

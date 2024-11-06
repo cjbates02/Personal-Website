@@ -9,20 +9,11 @@ export default function Milestone({ isLeft, date }) {
     return (
         <div className="milestone-container">
             <div className={nodeCalloutContainerClass}>
-                <Node date={date} dateClass={dateClass} />
+                <Node />
                 <Callout calloutContainerClass={calloutContainerClass} />
+                <div className={dateClass}>{date}</div>
             </div>
             <Edge />
         </div>
     )
 }
-
-// switching callout to right
-// first switch node-callout-container flex direction to row
-// change callout container left to 60px
-// remove right
-
-// switching to left
-// first switch node-callout-container flex direction to row-reverse
-// change callout container right to 60px
-// remove left

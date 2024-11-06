@@ -2,7 +2,7 @@ import Node from './Node.jsx';
 import Edge from './Edge.jsx';
 import Callout from './Callout.jsx';
 
-export default function Milestone({ isLeft, date }) {
+export default function Milestone({ isLeft, date, title, desc }) {
     let nodeCalloutContainerClass = isLeft ? 'node-callout-container-left' : 'node-callout-container-left';
     let calloutContainerClass = isLeft ? 'callout-left' : 'callout-right';
     let dateClass = isLeft ? 'date-right' : 'date-left'; // we want the date on the opposite side of the callout
@@ -10,7 +10,11 @@ export default function Milestone({ isLeft, date }) {
         <div className="milestone-container">
             <div className={nodeCalloutContainerClass}>
                 <Node />
-                <Callout calloutContainerClass={calloutContainerClass} />
+                <Callout 
+                    calloutContainerClass={calloutContainerClass}
+                    title={title}
+                    desc={desc}
+                />
                 <div className={dateClass}>{date}</div>
             </div>
             <Edge />

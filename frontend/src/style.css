@@ -82,6 +82,7 @@ body {
     left: 55px;
     top: 15px;
     width: max-content;
+    font-weight: 300;
 }
 
 .date-left {
@@ -89,6 +90,7 @@ body {
     right: 55px;
     top: 15px;
     width: max-content;
+    font-weight: 300;
 }
 
 .edge {
@@ -125,11 +127,11 @@ body {
 
 
 .callout-left {
-    right: 60px;
+    right: 70px;
 }
 
 .callout-right {
-    left: 60px;
+    left: 70px;
 }
 
 .callout {
@@ -141,16 +143,18 @@ body {
     border-radius: 5px;
     box-shadow: 5px 5px 5px lightgray;
     padding: 10px;
+    font-weight: 300;
 }
 
-.callout-title-container {
+/* .callout-title-container {
    
-}
+} */
 
 
 .timeline-title-container {
     display: flex;
     justify-content: center;
     padding-bottom: 8px;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 300;
 }

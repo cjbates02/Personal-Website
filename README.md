@@ -1,5 +1,5 @@
 ## Personal Website
-An outlet to show case my skills to anyone of interest, including a timeline node graph of my journey as a developer so far. 
+An outlet to show case my skills to anyone of interest, including a timeline node graph of my journey as a developer so far.
 
 ### Tech Stack
 - Backend : Flask

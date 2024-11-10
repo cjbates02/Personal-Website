@@ -1,5 +1,7 @@
+import ProfilePhoto from "../assets/profile-photo.jpeg"
+
 export default function AboutMe({ showAboutMe }) {
-    const containerClass = showAboutMe ? "about-me-container" : "about-me-container hidden"
+    const containerClass = showAboutMe ? "about-me-container" : "about-me-container";
     return (
         <div className={containerClass}>
             <div className="about-me-content">
@@ -13,6 +15,9 @@ export default function AboutMe({ showAboutMe }) {
                     This website is actually written in react with a flask backend! Currently, I work for Cantor Fitzgerald 
                     writing software to support our futures exchange called FMX.
                 </p>
+            </div>
+            <div className="profile-photo-container">
+                <img className="profile-photo" alt="Profile" src={ProfilePhoto}></img>
             </div>
         </div>
     )

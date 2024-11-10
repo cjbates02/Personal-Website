@@ -1,5 +1,7 @@
+import React, { useState } from 'react';
 import Navbar from './components/Navbar.jsx'
 import MyTimeline from './components/MyTimeline.jsx'
+import AboutMe from './components/AboutMe.jsx';
 
 
 // Test Milestones, should pull from a database
@@ -66,13 +68,16 @@ const milestones = [
   }
 ];
 
-
-
 function App() {
+  const [showAboutMe, setShowAboutMe] = useState(false);
+
   return (
     <div className="main-container">
-      <Navbar />
-      <MyTimeline milestones={milestones}/>
+      <Navbar setShowAboutMe={setShowAboutMe} showAboutMe={showAboutMe}/>
+      <div className="content-container">
+        <AboutMe showAboutMe={showAboutMe}/>
+        <MyTimeline milestones={milestones}/>
+      </div>
     </div>
   );
 }

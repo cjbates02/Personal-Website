@@ -6,6 +6,17 @@ body {
 
 .main-container {
     overflow: hidden;
+    display: flex;
+}
+
+.content-container {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Navbar Styling */
@@ -50,11 +61,11 @@ body {
     overflow-y: auto;
     height: calc(100vh - 150px);
     padding: 15px;
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     position: relative;
     font-size: 12px;
+    width: 100%;
 }
 
 .milestone-container{
@@ -146,15 +157,40 @@ body {
     font-weight: 300;
 }
 
-/* .callout-title-container {
-   
-} */
-
 
 .timeline-title-container {
     display: flex;
     justify-content: center;
     padding-bottom: 8px;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 600;
+}
+
+.resume-upload-a {
+    text-decoration: none;
+    color: black;
+}
+
+/* About me component styling */
+
+.about-me-container {
+    width: 100%;
+}
+
+.about-me-content {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: hsl(0, 0%, 96%);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.about-me-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.about-me-body {
+    
 }

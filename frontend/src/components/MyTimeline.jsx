@@ -2,7 +2,7 @@ import Milestone from './Milestone.jsx'
 import StartNode from './StartNode.jsx'
 import EndNode from './EndNode.jsx'
 
-export default function MyTimeline({milestones}) {
+export default function MyTimeline({ milestones }) {
     let isLeft = false;
     return (
         <div className="timeline-container">

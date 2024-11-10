@@ -5,7 +5,10 @@ export default function AboutMe({ showAboutMe }) {
     return (
         <div className={containerClass}>
             <div className="about-me-content">
-                <h2 className="about-me-title">About Me</h2>
+                <div className="profile-photo-container">
+                    <img className="profile-photo" alt="Profile" src={ProfilePhoto}></img>
+                    <span className="about-me-title">Christian Bates</span>
+                </div>
                 <p>
                     I keep things simple. I focus on writing reusable clean software that is easy to both use and maintain.
                 </p>
@@ -15,9 +18,6 @@ export default function AboutMe({ showAboutMe }) {
                     This website is actually written in react with a flask backend! Currently, I work for Cantor Fitzgerald 
                     writing software to support our futures exchange called FMX.
                 </p>
-            </div>
-            <div className="profile-photo-container">
-                <img className="profile-photo" alt="Profile" src={ProfilePhoto}></img>
             </div>
         </div>
     )

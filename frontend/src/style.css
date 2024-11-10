@@ -13,9 +13,6 @@ body {
     display: flex;
     width: 100%;
     margin-top: 100px;
-    flex-direction: column;
-    justify-content: center;
-    overflow: auto;
 }
 
 .hidden {
@@ -39,7 +36,7 @@ body {
 }
 
 .navbar-button {
-    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .navbar-button:hover {
@@ -49,7 +46,7 @@ body {
 
 .navbar-btns {
     display: flex;
-    text-align: right;
+    text-align: left;
 }
 
 .navbar-title-container {
@@ -62,13 +59,16 @@ body {
 
 
 .timeline-container {
-    height: calc(100vh - 400px);
+    height: calc(100vh - 175px);
     padding: 15px;
     display: flex;
     flex-direction: column;
     position: relative;
-    font-size: 12px;
+    font-size: 14px;
     width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 28px;
 }
 
 .milestone-container{
@@ -177,17 +177,15 @@ body {
 /* About me component styling */
 
 .about-me-container {
-    width: 50%;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    width: 80%;
 }
 
 .about-me-content {
-    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     border-radius: 5px;
+    width: 100%;
 }
 
 .about-me-title {
@@ -207,10 +205,12 @@ body {
 .profile-photo-container {
     display: flex;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .profile-photo {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 90%;
+    padding-right: 10px;
 }

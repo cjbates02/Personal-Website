@@ -6,7 +6,7 @@ export default function MyTimeline({ milestones }) {
     let isLeft = false;
     return (
         <div className="timeline-container">
-            <div className="timeline-title-container">{'<MyTimeline />'}</div>
+            <div className="timeline-title-container">MyTimeline</div>
             <StartNode />
             {milestones.slice().reverse().map((milestone) => {
                 isLeft = !isLeft;

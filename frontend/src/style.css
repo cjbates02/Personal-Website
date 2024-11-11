@@ -32,6 +32,19 @@ a {
     cursor: pointer;
 }
 
+.icon {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.icon:hover {
+    background-color: hsl(0, 0%, 96%);
+}
+
 /* Navbar Styling */
 
 .navbar-container {
@@ -65,6 +78,11 @@ a {
     display: flex;
     font-size: 24px;
     font-weight: 500;
+}
+
+.contact-me-container {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* Timeline Styling */

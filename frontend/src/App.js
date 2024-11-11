@@ -74,6 +74,12 @@ const projects = [
     'desc': 'Network of multiple open source and custom honeypots sending logs to an ELK stack. Prometheus implemented for metrics and alerting. Real time packet analysis using TCPDump, socat to create a socket server, and python for the client side packet analysis. Deployed in an on site kubernetes cluster.',
     'gitHubLink': 'https://github.com/cjbates02/Beekeepers',
     'demoLink': ''
+  },
+  {
+    'title': 'SecureScape',
+    'desc': 'Desktop application built with Electron JS and a python backend that is designed to be your everyday users network companion. This tool scans all of the endpoints on your network and checks for open ports, generates a node graph network diagram with all the devices on your network, and scans the web for the latest CVE’s.',
+    'gitHubLink': 'https://github.com/cjbates02/SecureScape',
+    'demoLink': ''
   }
 ];
 

@@ -229,6 +229,7 @@ a {
 .projects-container {
     padding-left: 90px;
     margin-top: 40px;
+    margin-right: 5px;
 }
 
 .projects-title {
@@ -239,6 +240,11 @@ a {
 .project-title {
     font-size: 18px;
     font-weight: 500;
+    border-radius: 5px;
+}
+
+.project-title:hover {
+    font-weight: 600;
 }
 
 .projects-content-container {
@@ -250,9 +256,27 @@ a {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px lightgray;
+    margin-bottom: 20px;
 }
 
 .project-demo {
     text-align: center;
     width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.project-demo:hover {
+    font-weight: 600;
+}
+
+.demo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.project-desc {
+    padding-left: 5px;
+    padding-right: 5px;
 }

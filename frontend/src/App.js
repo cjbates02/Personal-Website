@@ -3,6 +3,8 @@ import Navbar from './components/Navbar.jsx'
 import MyTimeline from './components/MyTimeline.jsx'
 import AboutMe from './components/AboutMe.jsx';
 import Projects from './components/Projects.jsx';
+import ContactMe from './components/ContactMe.jsx';
+
 
 // Test Milestones, should pull from a database
 const milestones = [
@@ -93,6 +95,7 @@ function App() {
         <div className="left-panel-container">
           <AboutMe showAboutMe={showAboutMe} projects={projects}/>
           <Projects projects={projects} />
+          <ContactMe />
         </div>
         <MyTimeline milestones={milestones}/>
       </div>

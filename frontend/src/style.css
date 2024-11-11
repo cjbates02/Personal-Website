@@ -16,9 +16,9 @@ body {
 }
 
 .left-panel-container {
-    width: 80%;
+    width: 100%;
     overflow-y: auto;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
 }
 
 .hidden {
@@ -36,13 +36,16 @@ a {
     height: 30px;
     width: 30px;
     cursor: pointer;
-    margin-left: 40px;
     padding: 5px;
     border-radius: 5px;
 }
 
 .icon:hover {
     background-color: hsl(0, 0%, 96%);
+}
+
+.icon-container {
+    padding-left: 40px;
 }
 
 /* Navbar Styling */
@@ -80,7 +83,7 @@ a {
     font-weight: 500;
 }
 
-.contact-me-container {
+.contact-icon-container {
     display: flex;
     justify-content: space-evenly;
 }
@@ -89,7 +92,7 @@ a {
 
 
 .timeline-container {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -97,7 +100,6 @@ a {
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    margin-top: 50px;
 }
 
 .milestone-container{
@@ -267,6 +269,7 @@ a {
 
 .projects-content-container {
     padding-top: 10px;
+    width: 95%;
 }
 
 .project-container {
@@ -298,3 +301,67 @@ a {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+/* Contact Me Styline */
+
+.contact-me-container {
+    margin-left: 90px;
+    font-size: 20px;
+    margin-right: 5px;
+    margin-bottom: 100px;
+}
+
+.contact-me-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 75px;
+}
+
+.contact-input-container {
+    background-color: hsl(0, 0%, 96%);
+    padding: 15px;
+    height: 100%;
+    box-shadow: 5px 5px 5px lightgray;
+    width: 90%;
+}
+
+.input-email {
+    margin-bottom: 20px;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 99%;
+    padding-left: 5px;
+}
+
+.input-message {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.submit-btn {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.submit-btn:hover {
+    font-weight: 600;
+}
+

@@ -6,7 +6,7 @@ body {
 
 .main-container {
     overflow: hidden;
-    display: flex;
+    /* display: flex; */
 }
 
 .content-container {
@@ -15,9 +15,21 @@ body {
     margin-top: 100px;
 }
 
+.left-panel-container {
+    width: 80%;
+    overflow-y: auto;
+    height: calc(100vh - 150px);
+}
+
 .hidden {
     opacity: 0 !important;
     position: absolute;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 
 /* Navbar Styling */
@@ -59,8 +71,7 @@ body {
 
 
 .timeline-container {
-    height: calc(100vh - 175px);
-    padding: 15px;
+    height: calc(100vh - 150px);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -68,7 +79,7 @@ body {
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    margin-top: 28px;
+    margin-top: 50px;
 }
 
 .milestone-container{
@@ -151,7 +162,7 @@ body {
 .callout {
     background-color: hsl(0, 0%, 96%);
     position: absolute;
-    width: 300px;
+    width: 200px;
     height: fit-content;
     min-height: 50px;
     border-radius: 5px;
@@ -178,7 +189,6 @@ body {
 
 .about-me-container {
     display: flex;
-    width: 80%;
 }
 
 .about-me-content {
@@ -195,7 +205,7 @@ body {
 }
 
 .about-me-body {
-    
+    padding-left: 50px;
 }
 
 .transition-about-me-container {
@@ -205,7 +215,7 @@ body {
 .profile-photo-container {
     display: flex;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
 }
 
 .profile-photo {
@@ -213,4 +223,36 @@ body {
     width: 100px;
     border-radius: 90%;
     padding-right: 10px;
+}
+
+/* Projects Styling */
+.projects-container {
+    padding-left: 90px;
+    margin-top: 40px;
+}
+
+.projects-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.project-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.projects-content-container {
+    padding-top: 10px;
+}
+
+.project-container {
+    background-color: hsl(0, 0%, 96%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.project-demo {
+    text-align: center;
+    width: 100%;
 }

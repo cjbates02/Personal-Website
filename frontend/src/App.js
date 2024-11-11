@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar.jsx'
 import MyTimeline from './components/MyTimeline.jsx'
 import AboutMe from './components/AboutMe.jsx';
-
+import Projects from './components/Projects.jsx';
 
 // Test Milestones, should pull from a database
 const milestones = [
@@ -68,6 +68,15 @@ const milestones = [
   }
 ];
 
+const projects = [
+  {
+    'title': 'Honeynet Distributed System',
+    'desc': 'Network of multiple open source and custom honeypots sending logs to an ELK stack. Prometheus implemented for metrics and alerting. Real time packet analysis using TCPDump, socat to create a socket server, and python for the client side packet analysis. Deployed in an on site kubernetes cluster.',
+    'gitHubLink': 'https://github.com/cjbates02/Beekeepers',
+    'demoLink': ''
+  }
+];
+
 function App() {
   const [showAboutMe, setShowAboutMe] = useState(false);
 
@@ -75,7 +84,10 @@ function App() {
     <div className="main-container">
       <Navbar setShowAboutMe={setShowAboutMe} showAboutMe={showAboutMe}/>
       <div className="content-container">
-        <AboutMe showAboutMe={showAboutMe}/>
+        <div className="left-panel-container">
+          <AboutMe showAboutMe={showAboutMe} projects={projects}/>
+          <Projects projects={projects} />
+        </div>
         <MyTimeline milestones={milestones}/>
       </div>
     </div>

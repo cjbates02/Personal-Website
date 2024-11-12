@@ -12,7 +12,7 @@ CORS(api)
 FROM_EMAIL = os.getenv('FROM_EMAIL')
 FROM_EMAIL_PASSWORD = os.getenv('FROM_EMAIL_PASSWORD')
 TO_EMAIL = os.getenv('TO_EMAIL')
-SMTP_HOST = os.getev('SMTP_HOST')
+SMTP_HOST = os.getenv('SMTP_HOST')
 SMTP_PORT = os.getenv('SMTP_PORT')
 
 

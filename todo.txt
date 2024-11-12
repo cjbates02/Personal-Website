@@ -1,6 +1,7 @@
 Light Mode / Dark Mode Toggle 
-About me panel
 Blog panel
 Database connectivity
 Render callouts from Database
 Node Graph Animation
+Add logger
+Email integration

@@ -16,6 +16,11 @@ export default function ContactMe() {
     }
 
     function handleMessageSubmit() {
+        if (!message || !email) {
+            alert('Please enter both a message and your email and try again.');
+            return
+        }
+
         textAreaRef.current.value = '';
         emailInputRef.current.value = '';
 
@@ -35,8 +40,8 @@ export default function ContactMe() {
                 <span>Let's get in touch.</span>
             </div>
             <div className="contact-input-container">
-                <input className="input-email" onChange={handleEmailChange} placeholder="Email" ref={textAreaRef}></input>
-                <textarea className="input-message" onChange={handleMessageChange} placeholder="Message" ref={emailInputRef}></textarea>
+                <input className="input-email" type="email" onChange={handleEmailChange} placeholder="Email" ref={textAreaRef} required></input>
+                <textarea className="input-message" onChange={handleMessageChange} placeholder="Message" ref={emailInputRef} required></textarea>
                 <div className="submit-container">
                     <span className="submit-btn" onClick={handleMessageSubmit}>Submit</span>
                 </div>

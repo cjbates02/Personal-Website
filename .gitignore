@@ -2,6 +2,8 @@ backend/venv
 backend/__pycache__
 backend/.flaskenv
 backend/.env
+backend/.venv
+
 
 
 frontend/node_modules

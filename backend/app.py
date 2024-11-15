@@ -31,7 +31,6 @@ def send_resume():
 
 @api.route('/send-email', methods=['GET', 'POST'])
 def send_email():
-    
     data = request.get_json()
     user_email = data['email']
     user_message = data['message']
@@ -39,7 +38,7 @@ def send_email():
     msg = MIMEMultipart()
     msg['From'] = FROM_EMAIL
     msg['To'] =TO_EMAIL
-    msg['Subject'] = f'f{user_email} reached out through your personal website.'
+    msg['Subject'] = f'{user_email} reached out through your personal website.'
     msg.attach(MIMEText(user_message, 'plain'))
    
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp_server:

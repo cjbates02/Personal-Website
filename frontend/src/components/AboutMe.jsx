@@ -1,7 +1,6 @@
 import ProfilePhoto from "../assets/profile-photo.jpeg"
 
-export default function AboutMe({ showAboutMe }) {
-    const containerClass = showAboutMe ? "about-me-container" : "about-me-container";
+export default function AboutMe() {
     return (
         <div className="about-me-container">
             <div className="about-me-content">

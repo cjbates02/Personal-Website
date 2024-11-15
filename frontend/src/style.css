@@ -12,7 +12,7 @@ body {
 .content-container {
     display: flex;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .left-panel-container {
@@ -58,18 +58,14 @@ a {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    padding: 30px;
+    padding: 20px;
     z-index: 1000;
     background-color: white;
+    padding-bottom: 0px;
 }
 
 .navbar-button {
-    padding-right: 40px;
-}
-
-.navbar-button:hover {
-    cursor: pointer;
-    font-weight: 600;
+    padding-right: 5px;
 }
 
 .navbar-btns {
@@ -87,6 +83,18 @@ a {
     display: flex;
     justify-content: space-evenly;
 }
+
+.download-resume-icon {
+    position: relative;
+    bottom: 8px;
+    height: 25px;
+    width: 25px;
+}
+
+.download-resume-icon:hover {
+    background-color: transparent;
+}
+
 
 /* Timeline Styling */
 
@@ -200,9 +208,19 @@ a {
     font-weight: 600;
 }
 
-.resume-upload-a {
+.resume-download-a {
     text-decoration: none;
     color: black;
+    display: flex;
+    height: 24px;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 3px;
+}
+
+.resume-download-a:hover {
+    background-color: hsl(0, 0%, 96%);
 }
 
 /* About me component styling */

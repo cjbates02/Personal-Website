@@ -4,4 +4,7 @@ Database connectivity
 Render callouts from Database
 Node Graph Animation
 Add logger
-Email integration
+Email integration - Done 11/14
+Add email success message
+Add tool tip when a user copies an email or phone number
+Fix message div

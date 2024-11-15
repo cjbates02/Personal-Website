@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Navbar from './components/Navbar.jsx'
 import MyTimeline from './components/MyTimeline.jsx'
 import AboutMe from './components/AboutMe.jsx';
@@ -88,14 +87,12 @@ const projects = [
 ];
 
 function App() {
-  const [showAboutMe, setShowAboutMe] = useState(false);
-
   return (
     <div className="main-container">
-      <Navbar setShowAboutMe={setShowAboutMe} showAboutMe={showAboutMe}/>
+      <Navbar/>
       <div className="content-container">
         <div className="left-panel-container">
-          <AboutMe showAboutMe={showAboutMe} projects={projects}/>
+          <AboutMe projects={projects}/>
           <Projects projects={projects} />
           <ContactMe />
         </div>

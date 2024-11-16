@@ -43,7 +43,7 @@ export default function ContactMe() {
                 <input className="input-email" type="email" onChange={handleEmailChange} placeholder="Email" ref={textAreaRef} required></input>
                 <textarea className="input-message" onChange={handleMessageChange} placeholder="Message" ref={emailInputRef} required></textarea>
                 <div className="submit-container">
-                    <span className="submit-btn" onClick={handleMessageSubmit}>Submit</span>
+                    <span title="Submit Message" className="submit-btn" onClick={handleMessageSubmit}>Submit</span>
                 </div>
             </div>
         </div>

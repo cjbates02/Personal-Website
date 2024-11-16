@@ -10,7 +10,7 @@ function Navbar() {
     function handleCopyClick(e) {
         const id = e.target.id;
         const iconSrc = e.target.src;
-        const copiedText = (id === 'email' ? 'cbate001@plattsburgh.edu' : '(518)-871-3802');
+        const copiedText = (id === 'icon-email' ? 'cbate001@plattsburgh.edu' : '(518)-871-3802');
         navigator.clipboard.writeText(copiedText);
         e.target.src = IconCopied;
         setTimeout(() => {
@@ -34,11 +34,11 @@ function Navbar() {
                 </span>
                 <span className="icon-container"><a href="https://github.com/cjbates02"><img title="GitHub" alt="GitHub" className="icon" src={IconGitHub}></img></a></span>
 
-                <span id="phone-number" className="icon-container">
-                    <img id="phone-number" title="(518)-871-3802" alt="Phone Number" className="icon" src={IconPhone} onClick={handleCopyClick}></img>
+                <span id="phone-number-container" className="icon-container">
+                    <img id="icon-phone" title="(518)-871-3802" alt="Phone Number" className="icon copy-icon" src={IconPhone} onClick={handleCopyClick}></img>
                 </span>
-                <span id="email" className="icon-container">
-                    <img id="email" title="cbate001@plattsburgh.edu" alt="Email" className="icon" src={IconEmail} onClick={handleCopyClick}></img>
+                <span id="email-container" className="icon-container">
+                    <img id="icon-email" title="cbate001@plattsburgh.edu" alt="Email" className="icon copy-icon" src={IconEmail} onClick={handleCopyClick}></img>
                 </span>
             </div>
         </div>

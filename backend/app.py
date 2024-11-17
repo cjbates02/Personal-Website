@@ -5,12 +5,20 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import os
-
+import logging
 
 load_dotenv()
 
 api = Flask(__name__)
 CORS(api)
+
+logger = logging.getLogger('personal_website_logger')
+logger.setLevel(logging.INFO)
+file_handler = logging.FileHandler('app.log')
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+file_handler.setFormatter(formatter)
+logger.addHandler(file_handler)
+
 
 FROM_EMAIL = os.getenv('FROM_EMAIL')
 FROM_EMAIL_PASSWORD = os.getenv('FROM_EMAIL_PASSWORD')
@@ -24,16 +32,20 @@ SMTP_PORT = os.getenv('SMTP_PORT')
 def send_resume():
     file_path = os.path.join('files', 'christianbates.docx')
     if os.path.exists(file_path):
+        logger.info('Client has requested resume download.')
         return send_file(file_path, as_attachment=True)
     else:
+        logger.error('Could not find file, client could not download resume.')
         return jsonify({'error': 'file not found'}), 404
 
 
 @api.route('/send-email', methods=['GET', 'POST'])
 def send_email():
+    logger.info('Client has sent a message to email.')
     data = request.get_json()
     user_email = data['email']
     user_message = data['message']
+    logger.info(f'{user_email} has sent a message: {user_message}')
 
     msg = MIMEMultipart()
     msg['From'] = FROM_EMAIL
@@ -45,8 +57,6 @@ def send_email():
         smtp_server.login(FROM_EMAIL, FROM_EMAIL_PASSWORD)
         smtp_server.sendmail(FROM_EMAIL, TO_EMAIL, msg.as_string())
         
-    
-   
     return jsonify({'message': f'Recieved message: {data}'})
     
     

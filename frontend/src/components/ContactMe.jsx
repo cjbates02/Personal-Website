@@ -1,10 +1,14 @@
 import React, { useState, useRef } from 'react';
 import LoadingIcon from './LoadingIcon.jsx';
+import SuccessIcon from './SuccessIcon.jsx';
+
 
 export default function ContactMe() {
     const [message, setMessage] = useState('');
     const [email, setEmail] = useState('');
     const [loading, setLoading] = useState(false);
+    const [showSuccessIcon, setShowSuccessIcon] = useState(false);
+    const [showFailureMessage, setShowFailureMessage] = useState(false);
 
     const textAreaRef = useRef(null);
     const emailInputRef = useRef(null);
@@ -17,13 +21,31 @@ export default function ContactMe() {
         setEmail(e.target.value);
     }
 
+    function displaySuccessIndication(response) {
+        if (response.ok) {
+            setShowSuccessIcon(true);
+            setTimeout(() => {
+                setShowSuccessIcon(false);
+            }, 2000);
+        }
+        else {
+            displayErrorMessage();
+        }
+    }
+
+    function displayErrorMessage() {
+        setShowFailureMessage(true);
+        setTimeout(() => {
+            setShowFailureMessage(false);
+        }, 5000);
+    }
+
     function handleMessageSubmit(e) {
         if (!message || !email) {
             alert('Please enter both a message and your email and try again.');
             return
         }
         setLoading(true);
-
         textAreaRef.current.value = '';
         emailInputRef.current.value = '';
 
@@ -35,10 +57,13 @@ export default function ContactMe() {
         .then(response => {
             response.json();
             setLoading(false);
+            displaySuccessIndication(response);
         })
         .then(data => console.log(data))
-        .catch(error => console.log(error));
-
+        .catch(error => {
+            setLoading(false);
+            displayErrorMessage();
+        })   
         setMessage('');
         setEmail('');
     }
@@ -55,8 +80,14 @@ export default function ContactMe() {
                     {
                         loading ? (<LoadingIcon />) : (<span title="Submit Message" className="submit-btn" onClick={handleMessageSubmit}>Submit</span>)
                     }
+                    {
+                        showSuccessIcon ? (<SuccessIcon />) : (<></>)
+                    }
                 </div>
             </div>
+                {
+                    showFailureMessage ? (<span className="message-failed-span">Message failed to send, please email me directly.</span>) : (<></>)
+                }
         </div>
     )
 }

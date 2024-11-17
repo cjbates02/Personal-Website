@@ -1,12 +1,23 @@
 import ProfilePhoto from "../assets/profile-photo.jpeg"
 
 export default function AboutMe() {
+    function handleContactMeClick(e) {
+        const leftContainer = e.target.parentElement.parentElement.parentElement.parentElement.parentElement;
+        leftContainer.scrollTo({
+            top: leftContainer.scrollHeight,
+            behavior: 'smooth',
+        });
+    }
+
     return (
         <div className="about-me-container">
             <div className="about-me-content">
                 <div className="profile-photo-container">
                     <img className="profile-photo" alt="Profile" src={ProfilePhoto}></img>
-                    <span className="about-me-title">Christian Bates</span>
+                    <div>
+                        <div className="about-me-title">Christian Bates</div>
+                        <div className="contact-me-link" onClick={handleContactMeClick}>Contact Me</div>
+                    </div>
                 </div>
                 <div className="about-me-body">
                     <p>

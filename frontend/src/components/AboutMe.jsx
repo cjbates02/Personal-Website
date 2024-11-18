@@ -1,10 +1,16 @@
 import ProfilePhoto from "../assets/profile-photo.jpeg"
 
-export default function AboutMe() {
+export default function AboutMe({projects, isMobileDevice}) {
     function handleContactMeClick(e) {
-        const leftContainer = e.target.parentElement.parentElement.parentElement.parentElement.parentElement;
-        leftContainer.scrollTo({
-            top: leftContainer.scrollHeight,
+        let parentContainer = null;
+        if (isMobileDevice) {
+            parentContainer = e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
+        } else {
+            parentContainer = e.target.parentElement.parentElement.parentElement.parentElement.parentElement;
+        }
+
+        parentContainer.scrollTo({
+            top: parentContainer.scrollHeight,
             behavior: 'smooth',
         });
     }

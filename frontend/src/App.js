@@ -114,7 +114,7 @@ function App() {
       <Navbar />
       <div className="content-container">
         <div className="left-panel-container">
-          <AboutMe projects={projects} />
+          <AboutMe projects={projects} isMobileDevice={isMobileDevice}/>
           <Projects projects={projects} />
           {
             isMobileDevice ? <MyTimeline milestones={milestones}/> : <></>

@@ -2,12 +2,9 @@ body {
   margin: 0px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  overflow: hidden;
 }
 
 .main-container {
-  overflow: hidden;
-  /* display: flex; */
 }
 
 .content-container {
@@ -110,7 +107,6 @@ a {
   font-size: 14px;
   width: 100%;
   overflow-y: auto;
-  overflow-x: hidden;
   bottom: 5px;
 }
 
@@ -409,10 +405,10 @@ a {
 }
 
 .message-failed-span {
-    font-size: 16px;
-    color: red;
-    position: relative;
-    top: 5px;
+  font-size: 16px;
+  color: red;
+  position: relative;
+  top: 5px;
 }
 
 /* Loading Icon */
@@ -533,5 +529,86 @@ a {
 @keyframes fill {
   100% {
     box-shadow: inset 0px 0px 0px 30px #7ac142;
+  }
+}
+
+/* Mobile Styling */
+@media (max-width: 767px) {
+  .content-container {
+    display: block;
+    overflow: auto;
+    margin-top: 53px;
+    height: calc(100vh - 50px);
+  }
+
+  .about-me-body {
+    padding-left: 30px;
+  }
+
+  .about-me-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .resume-download-a {
+    padding: 5px;
+    top: 1px;
+  }
+
+  .navbar-container {
+    padding: 5px;
+  }
+
+  .icon-container {
+    padding-left: 5px;
+  }
+
+  .projects-container {
+    width: 100%;
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+
+  .projects-content-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .projects-title {
+    padding-left: 10px;
+  }
+
+  .contact-me-container {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+
+  .contact-input-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-me-title {
+    padding-left: 10px;
+  }
+
+  .callout {
+    width: 120px;
+  }
+
+  .edge {
+    height: 150px;
+  }
+
+  .timeline-title-container {
+    margin-top: 50px;
+  }
+
+  .timeline-container {
+    overflow-y: visible;
+  }
+
+  .left-panel-container {
+    overflow-y: visible;
   }
 }

@@ -11,72 +11,72 @@ const milestones = [
   {
     key: 1,
     date: "August 2021",
-    title: "Project Kickoff",
+    title: "Freshman Year",
     description:
-      "The project officially begins with initial planning and team formation.",
+      "Began my freshman year at UAlbany studying business administration working part time as a tech consultant at target.",
   },
   {
     key: 6,
-    date: "August 2021",
-    title: "Initial Research",
+    date: "January 2022",
+    title: "Hello World",
     description:
-      "The team conducts market research to understand user needs and competitive landscape.",
+      "Took my first programming course and learned to code in Java. Built a foundation in OOP and software design. Built my first project and discovered a passion for building software.",
   },
   {
     key: 2,
-    date: "August 2022",
-    title: "Prototype Completion",
+    date: "March 2022",
+    title: "Experimenting with new technologies.",
     description:
-      "The first version of the product prototype is completed and tested.",
+      "Began self teaching myself solidity and learned how to write smart contracts. Deployed my first DAPP to a the goerli blockchain. Also learned the basics of HTML, CSS, and JavaScript in this stage.",
   },
   {
     key: 7,
     date: "August 2022",
-    title: "Final Design Approval",
+    title: "Sophomore Year",
     description:
-      "The product design is finalized and approved by all stakeholders.",
+      "Transferred to Plattsburgh to pursue a degree in MIS with a minor in Computer Science. Took courses in system design, databases, and DSA. Built a strong technical foundation in computer science.",
   },
   {
     key: 3,
     date: "March 2023",
-    title: "Beta Launch",
+    title: "Landed my first internship!",
     description:
-      "The product enters beta testing with a select group of users.",
+      "Landed my first internship with BSNB working in the IT department. In this role I worked hands on configuring computer networks, built dashboard for the ticketing system, and provided technical help desk support.",
   },
   {
     key: 4,
-    date: "March 2023",
-    title: "User Feedback Collection",
+    date: "September 2023",
+    title: "CCT Leadership",
     description:
-      "User feedback is gathered and analyzed to improve the product before full launch.",
+      "Became deeply involved with the Center for Cybersecurity and Technology as PSU. Became a co-director where I worked hands on writing software for the organzation and led technical workshops for students.",
   },
   {
     key: 5,
-    date: "March 2023",
-    title: "Performance Optimization",
+    date: "November 2023",
+    title: "Freelance Web Development",
     description:
-      "The product undergoes performance optimization to ensure scalability and speed.",
+      "I was determined to land a software development internship for the following summer. I spent all of my free time studying DSA, building projects, and upskilling. To get some professional experience, I worked on Fiverr as a freelancer building full stack websites for clients.",
   },
   {
     key: 8,
-    date: "March 2023",
-    title: "Full Product Launch",
+    date: "February 2024",
+    title: "Software Development Internship!",
     description:
-      "The product is released to the public, marking the completion of the first phase.",
+      "After hundreds of applications and many hours I landed a software development internship at Cantor Fitzgerald. This role required relocating to NYC for the Summer. In this role, I leveraged my background in computer networking and web development to build network automation tools with intuitive frontends to support our net ops and desktop support teams. My tools are used daily and are currently deployed in production.",
   },
   {
     key: 9,
-    date: "March 2023",
-    title: "Customer Support Setup",
+    date: "August 2024",
+    title: "Transitioning to FMX",
     description:
-      "A customer support system is set up to handle queries and issues from users.",
+      "I was offered the oppurtunity to continue my internship on an e-trading team remotely for my senior year. This is my current role where I support and update my intitial projects as well as write software for FMX. In this role I am currently building a web application to visualize and manage the FMX platform.",
   },
   {
     key: 10,
-    date: "March 2023",
-    title: "First Major Update",
+    date: "November 2024",
+    title: "Building my skills",
     description:
-      "The first major product update is released, including new features and improvements.",
+      "I am spending my senior year working remotely for FMX, co directing the CCT, and completing the rest of my academic courses. In my free time, I am focusing my learning on developing skills in backend development.",
   },
 ];
 

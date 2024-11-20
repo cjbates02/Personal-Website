@@ -146,7 +146,7 @@ a {
 }
 
 .edge {
-  height: 125px;
+  height: 175px;
   border-left: 1px solid black;
   margin-left: 25px;
 }
@@ -188,13 +188,20 @@ a {
 .callout {
   background-color: hsl(0, 0%, 96%);
   position: absolute;
-  width: 200px;
+  width: 260px;
   height: fit-content;
   min-height: 50px;
   border-radius: 5px;
   box-shadow: 5px 5px 5px lightgray;
   padding: 10px;
   font-weight: 300;
+  overflow-y: auto;
+  max-height: 125px;
+}
+
+.callout-title {
+  font-weight: 600;
+  padding-bottom: 5px;
 }
 
 .timeline-title-container {
@@ -203,6 +210,10 @@ a {
   padding-bottom: 8px;
   font-size: 20px;
   font-weight: 600;
+}
+
+.callout-title-container {
+
 }
 
 .resume-download-a {
@@ -533,7 +544,7 @@ a {
 }
 
 /* Mobile Styling */
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   .content-container {
     display: block;
     overflow: auto;

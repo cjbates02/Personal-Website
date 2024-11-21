@@ -32,7 +32,7 @@ export default function AboutMe({projects, isMobileDevice}) {
                     <p>
                         I am a software developer looking for entry level roles starting in May 2025, post graduation. I
                         have found expertise in writing backend systems and automation tools in Python, and intuitive frontends in HTML, CSS, and JavaScript.
-                        This website is actually written in react with a flask backend! Currently, I work for Cantor Fitzgerald
+                        This website is actually written in react with a flask backend. Currently, I work for Cantor Fitzgerald
                         writing software to support our futures exchange called FMX.
                     </p>
                 </div>

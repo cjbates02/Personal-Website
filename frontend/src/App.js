@@ -48,7 +48,7 @@ const milestones = [
     date: "September 2023",
     title: "CCT Leadership",
     description:
-      "Became deeply involved with the Center for Cybersecurity and Technology as PSU. Became a co-director where I worked hands on writing software for the organzation and led technical workshops for students.",
+      "Became deeply involved with the Center for Cybersecurity and Technology at PSU. Became a co-director where I worked hands on writing software for the organzation and led technical workshops for students.",
   },
   {
     key: 5,

@@ -28,7 +28,7 @@ SMTP_HOST = os.getenv('SMTP_HOST')
 SMTP_PORT = os.getenv('SMTP_PORT')
 
 
-@api.route('/download/resume')
+@api.route('/api/download/resume')
 def send_resume():
     file_path = os.path.join('files', 'christianbates.docx')
     if os.path.exists(file_path):
@@ -39,7 +39,7 @@ def send_resume():
         return jsonify({'error': 'file not found'}), 404
 
 
-@api.route('/send-email', methods=['GET', 'POST'])
+@api.route('/api/send-email', methods=['GET', 'POST'])
 def send_email():
     logger.info('Client has sent a message to email.')
     data = request.get_json()

@@ -49,7 +49,7 @@ export default function ContactMe() {
         textAreaRef.current.value = '';
         emailInputRef.current.value = '';
 
-        fetch('http://127.0.0.1:5000/send-email', {
+        fetch('https://christianbates.org/api/send-mail', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({'email': email, 'message': message}),

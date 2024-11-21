@@ -21,7 +21,7 @@ function Navbar() {
     return (
         <div className="navbar-container">
             <div className="navbar-btns">
-                <a title="Download Resume" className="resume-download-a" href="http://127.0.0.1:5000/download/resume">
+                <a title="Download Resume" className="resume-download-a" href="https://christianbates.org/api/download/resume">
                     <img alt="Download Resume" className="icon download-resume-icon" src={IconDownload}></img>
                     <span className="navbar-button">Resume</span>
                 </a>

@@ -71,7 +71,7 @@ export default function ContactMe() {
     return (
         <div className="contact-me-container">
             <div className="contact-me-title">
-                <span>Let's get in tou</span>
+                <span>Let's get in touch!</span>
             </div>
             <div className="contact-input-container">
                 <input className="input-email" type="email" onChange={handleEmailChange} placeholder="Email" ref={textAreaRef} required></input>

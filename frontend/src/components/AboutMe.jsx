@@ -27,13 +27,7 @@ export default function AboutMe({projects, isMobileDevice}) {
                 </div>
                 <div className="about-me-body">
                     <p>
-                        I keep things simple. I focus on writing reusable clean software that is easy to both use and maintain.
-                    </p>
-                    <p>
-                        I am a software developer looking for entry level roles starting in May 2025, post graduation. I
-                        have found expertise in writing backend systems and automation tools in Python, and intuitive frontends in HTML, CSS, and JavaScript.
-                        This website is actually written in react with a flask backend. Currently, I work for Cantor Fitzgerald
-                        writing software to support our futures exchange called FMX.
+                    I’m a software developer with hands-on experience in full-stack web development. During my internship at Cantor Fitzgerald, I developed real-time web applications and network automation tools using JavaScript, Python, and HTML/CSS. In addition, as Co-Director at the Center for Cybersecurity and Technology at Plattsburgh, I’ve led projects, workshops, and developed internal tools for the organization. I’m now seeking an entry-level software development role where I can leverage my skills in Python, web development, and problem-solving to contribute to impactful software solutions.
                     </p>
                 </div>
             </div>

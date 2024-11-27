@@ -30,7 +30,7 @@ SMTP_PORT = os.getenv('SMTP_PORT')
 
 @api.route('/api/download/resume')
 def send_resume():
-    file_path = os.path.join('files', 'christianbates.docx')
+    file_path = os.path.join('files', 'christianbates.pdf')
     if os.path.exists(file_path):
         logger.info('Client has requested resume download.')
         return send_file(file_path, as_attachment=True)

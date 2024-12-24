@@ -86,7 +86,7 @@ const projects = [
     title: "Honeynet Distributed System",
     desc: "Network of multiple open source and custom honeypots sending logs to an ELK stack. Prometheus implemented for metrics and alerting. Real time packet analysis using TCPDump, socat to create a socket server, and python for the client side packet analysis. Deployed in an on site kubernetes cluster.",
     gitHubLink: "https://github.com/cjbates02/Beekeepers",
-    demoLink: "",
+    demoLink: "https://docs.google.com/presentation/d/1A27gYCfDR3LZS3NK3JvyMtvrdIQSCj_cPvoTSm4c9Vg/edit?usp=sharing",
   },
   {
     key: 1,

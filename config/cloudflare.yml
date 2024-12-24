@@ -1,0 +1,9 @@
+tunnel: d2fa2a08-eeb0-43a6-b613-73b0b850e0ac
+credentials-file: /root/.cloudflared/d2fa2a08-eeb0-43a6-b613-73b0b850e0ac.json
+
+ingress:
+  - hostname: christianbates.org
+    service: http://localhost:80
+  - hostname: api.christianbates.org
+    service: unix:/app/backend/flaskapp.sock
+  - service: http_status:404

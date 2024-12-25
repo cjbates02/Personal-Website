@@ -300,16 +300,25 @@ a {
   font-weight: 500;
   border-radius: 5px;
   padding: 5px;
+  align-content: center;
 }
 
-.project-title:hover {
+.project-title-container:hover {
   font-weight: 600;
-  background-color: hsl(0, 0%, 90%);
 }
 
 .projects-content-container {
   padding-top: 10px;
   width: 95%;
+}
+
+.project-git-hub {
+  
+}
+
+.project-title-container {
+  display: flex;
+  border-radius: 5px;
 }
 
 .project-container {

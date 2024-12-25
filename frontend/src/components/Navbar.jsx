@@ -1,9 +1,9 @@
-import IconEmail from "../assets/icons/email.svg"
-import IconPhone from "../assets/icons/phone.svg"
-import IconGitHub from "../assets/icons/github.svg"
-import IconLinkedIn from "../assets/icons/linkedin.svg"
-import IconDownload from "../assets/icons/download.svg"
-import IconCopied from "../assets/icons/copy.svg"
+import IconEmail from "../assets/icons/email.svg";
+import IconPhone from "../assets/icons/phone.svg";
+import IconGitHub from "../assets/icons/github.svg";
+import IconLinkedIn from "../assets/icons/linkedin.svg";
+import IconDownload from "../assets/icons/download.svg";
+import IconCopied from "../assets/icons/copy.svg";
 
 
 function Navbar() {

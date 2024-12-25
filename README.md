@@ -4,9 +4,12 @@ An outlet to show case my skills to anyone of interest, including a timeline nod
 ### Tech Stack
 - Backend : Flask
 - Frontend: React
+- Web Server: NGNIX
+- DNS Provder: Cloudflare
 
-### Features (TODO Included)
-- Blog
-- Node graph timeline of my milestones
-- Downloadable Resume
-- Dark mode / Light mode
+### Features
+- Node graph timeline of my milestones.
+- Downloadable resume.
+- Contact me section with SMTP client.
+- Portfolio project demos.
+- Automated deployment with bash script.

@@ -98,7 +98,7 @@ const projects = [
   {
     key: 2,
     title: "Personal Website",
-    desc: "I developed and deployed this website from scratch. It is written with a react frontend and a flask backend. This website is designed to showcase my skills as efficiently as possible. Additionally I wanted to make it easy for potential employers to get in touch, so I implemented an SMTP client on the backend so users can send messages to me through the contact me section. I deployed this website onto an ubuntu VM with NGNIX and the deployments are automated with bash script enabling me to push changes in about 30 seconds.",
+    desc: "I developed and deployed this website from scratch. It is written with a react frontend and a flask backend. This website is designed to showcase my skills as efficiently as possible. Additionally I wanted to make it easy for potential employers to get in touch, so I implemented an SMTP client on the backend so users can send messages to me through the contact me section. I deployed this website onto an ubuntu VM with NGNIX and the deployments are automated with a bash script enabling me to push changes in about 30 seconds.",
     gitHubLink: "https://github.com/cjbates02/SecureScape",
     demoLink: null,
   }

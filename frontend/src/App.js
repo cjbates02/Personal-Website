@@ -62,21 +62,21 @@ const milestones = [
     date: "February 2024",
     title: "Software Development Internship!",
     description:
-      "After hundreds of applications and many hours I landed a software development internship at Cantor Fitzgerald. This role required relocating to NYC for the Summer. In this role, I leveraged my background in computer networking and web development to build network automation tools with intuitive frontends to support our net ops and desktop support teams. My tools are used daily and are currently deployed in production.",
+      "After hundreds of applications I landed a software development internship at Cantor Fitzgerald. This role required relocating to NYC for the Summer. I leveraged my background in computer networking and web development to build network automation tools with intuitive frontends to support our net ops and desktop support teams. My tools are used daily and are currently deployed in production.",
   },
   {
     key: 9,
     date: "August 2024",
     title: "Transitioning to FMX",
     description:
-      "I was offered the oppurtunity to continue my internship on an e-trading team remotely for my senior year. This is my current role where I support and update my intitial projects as well as write software for FMX. In this role I am currently building a web application to visualize and manage the FMX platform.",
+      "I was offered the oppurtunity to continue my internship on an e-trading team remotely for my senior year. I am currently working on building a real time web application with web sockets to manage and visualize the operations side of the exchange. I work with Kubernetes, JavaScript, and Python on a daily basis.",
   },
   {
     key: 10,
     date: "November 2024",
     title: "Building my skills",
     description:
-      "I am spending my senior year working remotely for FMX, co directing the CCT, and completing the rest of my academic courses. In my free time, I am focusing my learning on developing skills in backend development.",
+      "I am spending my senior year working remotely for FMX, co directing the CCT, and completing the rest of my academic courses. In my free time, I am focusing my learning on enhancing my skills in full stack development.",
   },
 ];
 

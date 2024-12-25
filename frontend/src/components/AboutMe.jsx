@@ -27,7 +27,7 @@ export default function AboutMe({projects, isMobileDevice}) {
                 </div>
                 <div className="about-me-body">
                     <p>
-                    I’m a software developer with hands-on experience in full-stack web development. During my internship at Cantor Fitzgerald, I developed real-time web applications and network automation tools using JavaScript, Python, and HTML/CSS. In addition, as Co-Director at the Center for Cybersecurity and Technology at Plattsburgh, I’ve led projects, workshops, and developed internal tools for the organization. I’m now seeking an entry-level software development role where I can leverage my skills in Python, web development, and problem-solving to contribute to impactful software solutions.
+                    I’m a software developer with hands-on experience in full-stack web development. During my internship at Cantor Fitzgerald, I developed real-time web applications and network automation tools using JavaScript, Python, and HTML/CSS. In addition, as Co-Director at the Center for Cybersecurity and Technology at Plattsburgh, I’ve led projects, workshops, and developed internal tools for the organization. I’m now seeking an entry-level software development role where I can leverage my skills in Python, web development and network automation.
                     </p>
                 </div>
             </div>

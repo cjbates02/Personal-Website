@@ -19,4 +19,4 @@ ssh admin@10.0.97.210 << EOF
   
   sudo systemctl restart flaskapp
   sudo systemctl restart nginx
-EOF
+EOFifco

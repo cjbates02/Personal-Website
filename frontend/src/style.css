@@ -323,7 +323,7 @@ a {
 
 .project-container {
   background-color: hsl(0, 0%, 96%);
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
   box-shadow: 5px 5px 5px lightgray;
   margin-bottom: 20px;
@@ -345,11 +345,16 @@ a {
 .demo-container {
   display: flex;
   justify-content: center;
+  height: 25px;
+  align-items: center;
 }
 
 .project-desc {
-  padding-left: 5px;
+  padding-left: 10px;
   padding-right: 5px;
+  padding-top: 5px;
+  height: 155px;
+  overflow-y: auto;
 }
 
 /* Contact Me Styline */

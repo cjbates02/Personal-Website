@@ -7,7 +7,7 @@ export default function Project({ title, desc, gitHubLink, demoLink }) {
                 <img alt="Git Hub" className="icon project-git-hub" src={IconGitHub}></img>
                 <span className="project-title">{title}</span>
             </a>
-            <p className="project-desc">{desc}</p>
+            <div className="project-desc">{desc}</div>
             <div className="demo-container">
                 {demoLink ? (<a href={demoLink} title="Demo Link"><span className="project-demo">Demo</span></a>) : (<span></span>)}
             </div>

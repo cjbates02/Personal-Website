@@ -353,7 +353,7 @@ a {
   padding-left: 10px;
   padding-right: 5px;
   padding-top: 5px;
-  height: 155px;
+  height: 100px;
   overflow-y: auto;
 }
 
@@ -570,6 +570,10 @@ a {
 
   textarea {
     font-size: 16px;
+  }
+
+  .project-desc {
+    height: 145px;
   }
 
   .content-container {

@@ -52,7 +52,7 @@ jobs:
         key: ${{ secrets.EC2_SSH_KEY }}
         port: 22
         source: "docker-compose.yml"
-        target: "~/docker-compose.yml" 
+        target: "~/docker-compose2.yml" 
           
     # 7. SSH into EC2 and Restart Docker Compose
     - name: Deploy to EC2

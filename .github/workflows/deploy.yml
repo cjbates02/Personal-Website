@@ -53,12 +53,12 @@ jobs:
         port: 22
         script: |
           cd ~
-          export FROM_EMAIL=${{ secrets.FROM_EMAIL }}
-          export FROM_EMAIL_PASSWORD=${{ secrets.FROM_EMAIL_PASSWORD }}
-          export SMTP_HOST=${{ secrets.SMTP_HOST }}
-          export SMTP_PORT=${{ secrets.SMTP_PORT }}
-          export TO_EMAIL=${{ secrets.TO_EMAIL }}
-          export TO_EMAIL_BACKUP=${{ secrets.TO_EMAIL_BACKUP }}
+          sudo export FROM_EMAIL=${{ secrets.FROM_EMAIL }}
+          sudo export FROM_EMAIL_PASSWORD=${{ secrets.FROM_EMAIL_PASSWORD }}
+          sudo export SMTP_HOST=${{ secrets.SMTP_HOST }}
+          sudo export SMTP_PORT=${{ secrets.SMTP_PORT }}
+          sudo export TO_EMAIL=${{ secrets.TO_EMAIL }}
+          sudo export TO_EMAIL_BACKUP=${{ secrets.TO_EMAIL_BACKUP }}
           sudo docker compose pull
           sudo docker compose down
           sudo docker compose up -d

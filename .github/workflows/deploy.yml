@@ -53,16 +53,14 @@ jobs:
         port: 22
         script: |
           cd ~
-          # Set environment variables
-          echo "export FROM_EMAIL=${{ secrets.FROM_EMAIL }}" >> ~/.bashrc
-          echo "export FROM_EMAIL_PASSWORD=${{ secrets.FROM_EMAIL_PASSWORD }}" >> ~/.bashrc
-          echo "export SMTP_HOST=${{ secrets.SMTP_HOST }}" >> ~/.bashrc
-          echo "export SMTP_PORT=${{ secrets.SMTP_PORT }}" >> ~/.bashrc
-          echo "export TO_EMAIL=${{ secrets.TO_EMAIL }}" >> ~/.bashrc
-          echo "export TO_EMAIL_BACKUP=${{ secrets.TO_EMAIL_BACKUP }}" >> ~/.bashrc
           
-          # Load the updated environment variables
-          sudo source ~/.bashrc
+          # Set environment variables
+          export FROM_EMAIL=${{ secrets.FROM_EMAIL }}
+          export FROM_EMAIL_PASSWORD=${{ secrets.FROM_EMAIL_PASSWORD }}
+          export SMTP_HOST=${{ secrets.SMTP_HOST }}
+          export SMTP_PORT=${{ secrets.SMTP_PORT }}
+          export TO_EMAIL=${{ secrets.TO_EMAIL }}
+          export TO_EMAIL_BACKUP=${{ secrets.TO_EMAIL_BACKUP }}
 
           # Pull down the updated images
           sudo -E docker compose pull

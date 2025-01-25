@@ -1,39 +1,48 @@
-name: Deploy to EC2 instance
+name: Deploy to EC2 (ARM)
 
 on:
   push:
     branches:
-      - master
+      - master  # Trigger workflow on pushes to the `main` branch
 
-# ARM based runner so the images are built correctly for the EC2 instance
 jobs:
-  build-and-deploy: 
-    runs-on: ubuntu-22.04-arm
+  build-and-deploy:
+    runs-on: ubuntu-latest
 
     steps:
     # 1. Checkout the repository
     - name: Checkout Code
       uses: actions/checkout@v3
 
-    # 2. Log in to Docker Hub
+    # 2. Set up Docker Buildx
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+
+    # 3. Log in to Docker Hub
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
-    # 3. Build and Push Frontend Image
+    # 4. Build and Push Frontend Image for ARM
     - name: Build and Push Frontend Image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/personal_website_frontend:latest ./frontend
-        docker push ${{ secrets.DOCKER_USERNAME }}/personal_website_frontend:latest
+        docker buildx build \
+          --platform linux/arm64 \
+          -t ${{ secrets.DOCKER_USERNAME }}/personal_website_frontend:latest \
+          ./frontend \
+          --push
 
-    # 4. Build and Push Backend Image
+    # 5. Build and Push Backend Image for ARM
     - name: Build and Push Backend Image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/personal_website_backend:latest ./backend
-        docker push ${{ secrets.DOCKER_USERNAME }}/personal_website_backend:latest
-
+        docker buildx build \
+          --platform linux/arm64 \
+          -t ${{ secrets.DOCKER_USERNAME }}/personal_website_backend:latest \
+          ./backend \
+          --push
+          
     # 5. SSH into EC2 and Restart Docker Compose
     - name: Deploy to EC2
       uses: appleboy/ssh-action@v0.1.6

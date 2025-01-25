@@ -28,7 +28,7 @@ jobs:
     # 4. Build and Push Frontend Image for ARM
     - name: Build and Push Frontend Image
       run: |
-        docker buildx build \
+        config --global url."git@github.com:".insteadOf git://github.com/ && docker buildx build \
           --platform linux/arm64 \
           -t ${{ secrets.DOCKER_USERNAME }}/personal_website_frontend:latest \
           ./frontend \

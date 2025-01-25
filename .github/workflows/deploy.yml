@@ -62,7 +62,7 @@ jobs:
           echo "export TO_EMAIL_BACKUP=${{ secrets.TO_EMAIL_BACKUP }}" >> ~/.bashrc
           
           # Load the updated environment variables
-          source ~/.bashrc
+          sudo source ~/.bashrc
 
           # Pull down the updated images
           sudo -E docker compose pull

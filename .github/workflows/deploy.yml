@@ -8,9 +8,7 @@ on:
 # ARM based runner so the images are built correctly for the EC2 instance
 jobs:
   build-and-deploy: 
-    runs-on: ubuntu-22.04
-    container:
-      image: ghcr.io/actions/runner-images/ubuntu-arm64:latest
+    runs-on: ubuntu-22.04-arm
 
     steps:
     # 1. Checkout the repository

@@ -10,6 +10,12 @@ services:
   
   backend:
     image: cjbates02/personal_website_backend:latest
+    environment:
+      - FROM_EMAIL=${FROM_EMAIL}
+      - TO_EMAIL=${TO_EMAIL}
+      - TO_EMAIL_BACKUP=${TO_EMAIL_BACKUP}
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT}
     ports:
       - "8000:8000"
     networks:

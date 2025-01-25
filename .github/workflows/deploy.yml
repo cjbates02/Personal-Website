@@ -42,8 +42,19 @@ jobs:
 #           -t ${{ secrets.DOCKER_USERNAME }}/personal_website_backend:latest \
 #           ./backend \
 #           --push
+
+    # 6: Copy docker-compose.yml to EC2 using SCP
+    - name: Copy docker-compose.yml to EC2
+      uses: appleboy/scp-action@v0.1.7
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USER }}
+        key: ${{ secrets.EC2_SSH_KEY }}
+        port: 22
+        source: "docker-compose.yml"
+        target: "~/" 
           
-    # 5. SSH into EC2 and Restart Docker Compose
+    # 7. SSH into EC2 and Restart Docker Compose
     - name: Deploy to EC2
       uses: appleboy/ssh-action@v0.1.6
       with:

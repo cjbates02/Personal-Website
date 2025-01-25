@@ -52,7 +52,7 @@ jobs:
         key: ${{ secrets.EC2_SSH_KEY }}
         port: 22
         source: "docker-compose.yml"
-        target: "~/" 
+        target: "~/docker-compose.yml" 
           
     # 7. SSH into EC2 and Restart Docker Compose
     - name: Deploy to EC2
@@ -63,7 +63,7 @@ jobs:
         key: ${{ secrets.EC2_SSH_KEY }}
         port: 22
         script: |
-          cd ~
+          cd ~/
           
           # Set environment variables
           export FROM_EMAIL=${{ secrets.FROM_EMAIL }}

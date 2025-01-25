@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
-EXPOSE 5000
+EXPOSE 8000
 
-CMD ["flask", "run", "--host=0.0.0.0", "--unix-socket", "/app/backend/flaskapp.sock"]
+CMD ["gunicorn", "-b", "0.0.0.0:8000", "app:api"]

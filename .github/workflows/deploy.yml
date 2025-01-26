@@ -42,7 +42,8 @@ jobs:
 #           -t ${{ secrets.DOCKER_USERNAME }}/personal_website_backend:latest \
 #           ./backend \
 #           --push
-
+    - name: List files in the current directory
+      run: ls -la
     # 6: Copy docker-compose.yml to EC2 using SCP
     - name: Copy docker-compose.yml to EC2
       uses: appleboy/scp-action@v0.1.7

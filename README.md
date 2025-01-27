@@ -6,6 +6,8 @@ https://christianbates.org/
 - Frontend: React
 - Web Server: NGNIX
 - DNS Provder: Cloudflare
+- Cloud Provider: AWS EC2
+- CI/CD: Docker, Docker Compose, GitHub Actions
 
 ### Features
 - Node graph timeline of my milestones.
@@ -13,3 +15,5 @@ https://christianbates.org/
 - Contact me section with SMTP client.
 - Portfolio project demos.
 - Automated deployment with bash script.
+- Fully automated deployment using GitHub actions workflow.
+- Containerized frontend and backend with docker compose.

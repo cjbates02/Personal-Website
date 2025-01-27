@@ -323,7 +323,7 @@ a {
 
 .project-container {
   background-color: hsl(0, 0%, 96%);
-  padding: 10px;
+  padding: 6px;
   border-radius: 5px;
   box-shadow: 5px 5px 5px lightgray;
   margin-bottom: 20px;
@@ -353,7 +353,7 @@ a {
   padding-left: 10px;
   padding-right: 5px;
   padding-top: 5px;
-  height: 100px;
+  height: 125px;
   overflow-y: auto;
 }
 

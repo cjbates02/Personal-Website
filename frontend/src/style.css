@@ -312,12 +312,23 @@ a {
   width: 95%;
 }
 
-.project-git-hub {
-  
+.project-tool {
+  height: 20px;
 }
 
 .project-title-container {
   display: flex;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-title-wrapper {
+  display: flex;
+}
+
+.project-title-wrapper:hover {
+  background-color: hsl(0, 0%, 90%);
   border-radius: 5px;
 }
 

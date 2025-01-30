@@ -1,7 +1,7 @@
-export default function ToolList() {
+export default function ToolList(toolList) {
     return (
-        <div>
-            
+        <div className="tool-list-container">
+            <div className="tool-list-title">Tools</div>
         </div>
     )
 } 

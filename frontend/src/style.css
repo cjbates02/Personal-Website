@@ -304,7 +304,7 @@ a {
 }
 
 .project-title-container:hover {
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .projects-content-container {
@@ -313,7 +313,10 @@ a {
 }
 
 .project-tool {
-  height: 20px;
+  height: 22px;
+  position: relative;
+  bottom: 6px;
+  left: 6px;
 }
 
 .project-title-container {
@@ -321,6 +324,7 @@ a {
   border-radius: 5px;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .project-title-wrapper {
@@ -485,6 +489,22 @@ a {
   left: 56px;
   animation: lds-ellipsis3 0.6s infinite;
 }
+
+/* Tool List Styling */
+.tool-list-container {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  background: hsl(0, 0%, 90%);
+  right: 25px;
+  top: 25px;
+  box-shadow: 5px 5px 5px lightgray;
+}
+
+.tool-list-title {
+
+}
+
 @keyframes lds-ellipsis1 {
   0% {
     transform: scale(0);

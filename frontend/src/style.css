@@ -492,16 +492,17 @@ a {
 
 /* Tool List Styling */
 .tool-list-container {
-  height: 200px;
+  height: fit-content;
   width: 200px;
   position: absolute;
   background: hsl(0, 0%, 90%);
   right: 25px;
   top: 25px;
   box-shadow: 5px 5px 5px lightgray;
+  padding: 5px;
 }
 
-.tool-list-title {
+.tool-list-item {
 
 }
 

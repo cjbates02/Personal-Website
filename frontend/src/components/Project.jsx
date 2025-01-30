@@ -3,8 +3,8 @@ import IconTool from "../assets/icons/tool.svg";
 import ToolList from "./ToolList.jsx";
 import { useState } from "react";
 
-export default function Project({ title, desc, gitHubLink, demoLink }) {
-    const [showToolList, setShowToolList] = useState(true);
+export default function Project({ title, desc, gitHubLink, demoLink, toolList }) {
+    const [showToolList, setShowToolList] = useState(false);
 
     return (
         <div className="project-container">
@@ -21,7 +21,7 @@ export default function Project({ title, desc, gitHubLink, demoLink }) {
                      onMouseLeave={() => {setShowToolList(false)}}
                 >     
                 </img>
-                {showToolList ? ToolList([]) : <></>}
+                {showToolList ? ToolList(toolList) : <></>}
             </div>
             <div className="project-desc">{desc}</div>
             <div className="demo-container">

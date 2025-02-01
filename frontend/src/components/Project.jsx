@@ -17,9 +17,7 @@ export default function Project({ title, desc, gitHubLink, demoLink, toolList })
                      title="Project Tools" 
                      className="icon project-tool" 
                      src={IconTool}
-                     onTouchStart ={() => {setShowToolList(true)}}
                      onMouseEnter ={() => {setShowToolList(true)}}
-                     onTouchEnd={() => {setShowToolList(false)}}
                      onMouseLeave={() => {setShowToolList(false)}}
                 >     
                 </img>

@@ -87,7 +87,7 @@ const projects = [
     desc: "Network of multiple open source and custom honeypots sending logs to an ELK stack. Prometheus implemented for metrics and alerting. Real time web socket enabled packet analysis using TCPDump, and socat to create a socket server, and python for the client side packet analysis using scapy. Deployed and containerized in an on site kubernetes cluster. Additionally, the project uncludes a real time web UI that is designed to provide a birds eye view of the application components state and activity.",
     gitHubLink: "https://github.com/cjbates02/Beekeepers",
     demoLink: "https://docs.google.com/presentation/d/1A27gYCfDR3LZS3NK3JvyMtvrdIQSCj_cPvoTSm4c9Vg/edit?usp=sharing",
-    toolList: ['Python', 'JavaScript/HTML/CSS', 'Docker', 'Kubernetes', 'ELK', 'Prometheus', 'Flask', 'Websockets', 'Nginx']
+    toolList: ['Python', 'JavaScript/HTML/CSS', 'Docker', 'Kubernetes', 'ELK', 'Prometheus', 'Flask', 'Websockets', 'Nginx', 'TCPDump']
   },
   {
     key: 1,
@@ -103,7 +103,7 @@ const projects = [
     desc: "I developed and deployed this website from scratch. It is written with a react frontend and a flask backend. This website is designed to showcase my skills as efficiently as possible. Additionally I wanted to make it easy for potential employers to get in touch, so I implemented an SMTP client on the backend so users can send messages to me through the contact me section. This website is containerized with docker and deployed onto an nginx server running on an AWS EC2 instance. Additionally, I implemented CI/CD via GitHub actions that automates the entire deployment process.",
     gitHubLink: "https://github.com/cjbates02/Personal-Website",
     demoLink: null,
-    toolList: ['React', 'Flask', 'AWS EC2', 'Docker/Docker Compose', 'Bash', 'GitHub Actions', 'Nginx']
+    toolList: ['React', 'Flask', 'AWS EC2', 'Docker', 'Docker Compose', 'Bash', 'GitHub Actions', 'Nginx']
   }
 ];
 

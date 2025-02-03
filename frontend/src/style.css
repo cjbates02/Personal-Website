@@ -10,12 +10,17 @@ body {
 .content-container {
   display: flex;
   width: 100%;
-  margin-top: 80px;
-  height: calc(100vh - 80px);
+  margin-top: 63px;
+  height: calc(100vh - 63px);
 }
 
 .left-panel-container {
   width: 100%;
+  overflow-y: hidden;
+  scrollbar-gutter: stable;
+}
+
+.left-panel-container:hover {
   overflow-y: auto;
 }
 
@@ -106,8 +111,12 @@ a {
   position: relative;
   font-size: 14px;
   width: 100%;
+  overflow-y: hidden;
+  scrollbar-gutter: stable;
+}
+
+.timeline-container:hover {
   overflow-y: auto;
-  bottom: 5px;
 }
 
 .milestone-container {
@@ -195,8 +204,13 @@ a {
   box-shadow: 5px 5px 5px lightgray;
   padding: 10px;
   font-weight: 300;
-  overflow-y: auto;
+  overflow-y: hidden;
   max-height: 125px;
+  scrollbar-gutter: stable;
+}
+
+.callout:hover {
+  overflow-y: auto;
 }
 
 .callout-title {
@@ -213,7 +227,7 @@ a {
 }
 
 .callout-title-container {
-
+  /* overflow-y: hidden; */
 }
 
 .resume-download-a {
@@ -304,7 +318,7 @@ a {
 }
 
 .project-title-container:hover {
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .projects-content-container {
@@ -312,12 +326,29 @@ a {
   width: 95%;
 }
 
-.project-git-hub {
-  
+.project-tool {
+  height: 22px;
+  position: relative;
+  bottom: 6px;
+  left: 6px;
+  padding-top: 5px;
+  padding-bottom: 1px;
 }
 
 .project-title-container {
   display: flex;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.project-title-wrapper {
+  display: flex;
+}
+
+.project-title-wrapper:hover {
+  background-color: hsl(0, 0%, 90%);
   border-radius: 5px;
 }
 
@@ -354,6 +385,11 @@ a {
   padding-right: 5px;
   padding-top: 5px;
   height: 125px;
+  overflow-y: hidden;
+  scrollbar-gutter: stable;
+}
+
+.project-desc:hover {
   overflow-y: auto;
 }
 
@@ -474,6 +510,25 @@ a {
   left: 56px;
   animation: lds-ellipsis3 0.6s infinite;
 }
+
+/* Tool List Styling */
+.tool-list-container {
+  height: fit-content;
+  width: 140px;
+  position: absolute;
+  background: hsl(0, 0%, 90%);
+  right: 25px;
+  top: 25px;
+  box-shadow: 5px 5px 5px lightgray;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.tool-list-item {
+
+}
+
 @keyframes lds-ellipsis1 {
   0% {
     transform: scale(0);
@@ -650,7 +705,15 @@ a {
     overflow-y: visible;
   }
 
+  .timeline-container:hover {
+    overflow-y: visible;
+  }
+
   .left-panel-container {
+    overflow-y: visible;
+  }
+
+  .left-panel-container:hover {
     overflow-y: visible;
   }
 }

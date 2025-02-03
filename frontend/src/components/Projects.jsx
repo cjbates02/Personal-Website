@@ -10,6 +10,7 @@ export default function Projects({ projects }) {
                                 desc={project.desc}
                                 gitHubLink={project.gitHubLink}
                                 demoLink={project.demoLink} 
+                                toolList={project.toolList}
                                 key={project.key}
                             />
                 })}

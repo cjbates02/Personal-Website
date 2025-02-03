@@ -77,16 +77,17 @@ const milestones = [
     title: "Building my skills",
     description:
       "I am spending my senior year working remotely for FMX, co directing the CCT, and completing the rest of my academic courses. In my free time, I am focusing my learning on enhancing my skills in full stack development.",
-  },
+  }
 ];
 
 const projects = [
   {
     key: 0,
     title: "Honeynet Distributed System",
-    desc: "Network of multiple open source and custom honeypots sending logs to an ELK stack. Prometheus implemented for metrics and alerting. Real time packet analysis using TCPDump, socat to create a socket server, and python for the client side packet analysis. Deployed in an on site kubernetes cluster.",
+    desc: "Network of multiple open source and custom honeypots sending logs to an ELK stack. Prometheus implemented for metrics and alerting. Real time web socket enabled packet analysis using TCPDump, and socat to create a socket server, and python for the client side packet analysis using scapy. Deployed and containerized in an on site kubernetes cluster. Additionally, the project uncludes a real time web UI that is designed to provide a birds eye view of the application components state and activity.",
     gitHubLink: "https://github.com/cjbates02/Beekeepers",
     demoLink: "https://docs.google.com/presentation/d/1A27gYCfDR3LZS3NK3JvyMtvrdIQSCj_cPvoTSm4c9Vg/edit?usp=sharing",
+    toolList: ['Python', 'JavaScript/HTML/CSS', 'Docker', 'Kubernetes', 'ELK', 'Prometheus', 'Flask', 'Websockets', 'Nginx', 'TCPDump']
   },
   {
     key: 1,
@@ -94,6 +95,7 @@ const projects = [
     desc: "Desktop application built with Electron JS and a python backend that is designed to be your everyday users network companion. This tool scans all of the endpoints on your network and checks for open ports, generates a node graph network diagram with all the devices on your network, and scans the web for the latest CVE’s.",
     gitHubLink: "https://github.com/cjbates02/SecureScape",
     demoLink: "https://drive.google.com/file/d/1xPl6gqAheWzK__Y9kpz_A8u6aQsTp6Sg/view?usp=sharing",
+    toolList: ['Electron JS', 'Vis Network JS', 'Python', 'Scapy', 'Eel']
   },
   {
     key: 2,
@@ -101,6 +103,7 @@ const projects = [
     desc: "I developed and deployed this website from scratch. It is written with a react frontend and a flask backend. This website is designed to showcase my skills as efficiently as possible. Additionally I wanted to make it easy for potential employers to get in touch, so I implemented an SMTP client on the backend so users can send messages to me through the contact me section. This website is containerized with docker and deployed onto an nginx server running on an AWS EC2 instance. Additionally, I implemented CI/CD via GitHub actions that automates the entire deployment process.",
     gitHubLink: "https://github.com/cjbates02/Personal-Website",
     demoLink: null,
+    toolList: ['React', 'Flask', 'AWS EC2', 'Docker', 'Docker Compose', 'Bash', 'GitHub Actions', 'Nginx']
   }
 ];
 

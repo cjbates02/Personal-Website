@@ -27,7 +27,7 @@ export default function AboutMe({projects, isMobileDevice}) {
                 </div>
                 <div className="about-me-body">
                     <p>
-                    I’m a software developer with hands-on experience in full-stack web development. During my internship at Cantor Fitzgerald, I developed real-time web applications and network automation tools using JavaScript, TypeScript, Python, and HTML/CSS. In addition, as Co-Director at the Center for Cybersecurity and Technology at Plattsburgh, I’ve led projects, workshops, and developed internal tools for the organization.
+                        I am a software developer working as a junior system reliability engineer at FMX.
                     </p>
                 </div>
             </div>

@@ -77,6 +77,13 @@ const milestones = [
     title: "Building my skills",
     description:
       "I am spending my senior year working remotely for FMX, co directing the CCT, and completing the rest of my academic courses. In my free time, I am focusing my learning on enhancing my skills in full stack development.",
+  },
+  {
+    key: 10,
+    date: "April 2025",
+    title: "I landed a job!",
+    description:
+      "I landed my first professional gig as a junior system reliability engineer at FMX.",
   }
 ];
 
